@@ -21,9 +21,9 @@
         
         <div class="mt-5">
 
-            <div class="row mb-5">
+            <div class="row">
                 <h1 class="text-white display-1 fw-bold">Creative Team projects and Personal Projects</h1><br>
-                <p class="text-light mb-lg-5">This is my team project working with Senior students and my personal creative projects. <br> There will be upcoming projects in the future and I will update every of them so stay TUNED !</p>
+                <p class="text-light">This is my team project working with Senior students and my personal creative projects. <br> There will be upcoming projects in the future and I will update every of them so stay TUNED !</p>
             </div>
             
             <div class="project d-lg-flex align-items-lg-center justify-content-lg-between align-items-md-start row mt-lg-5">
@@ -56,7 +56,7 @@
                 <div class="profile-text col-lg-6 col-md-5">
                     <div class="profile-text-group w-75">
     
-                        <span class="text-white-50">#aboutMe</span>
+                        <span class="text-white-50">#projects</span>
                         <h2 class="text-white display-6 text-lg fw-bold">Dating App</h2>
                         <p class="text-white my-4 lh-lg">
                             This is a dating app which are mainly targeted for who are finding thier lovers. <br>
