@@ -1,0 +1,54 @@
+/* styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/* @import 'tailwindcss-animate'; */
+@import 'animate.css';
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
+
+/* -- font --  */
+/* @font-face {
+    font-family: 'Hiragino Mincho Std';
+    src: url('../../public/font/miragino/ヒラギノ明朝\ Std\ W4.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+   font-family: 'Poppins', sans-serif;
+   
+}
+
+.outline_text {
+    -webkit-text-stroke: 1px #0B0B0B; 
+    color: transparent; 
+}
+
+.outline_btn{
+    border : 1px solid #000000;
+    padding: 12px 32px;
+}
+
+.bg_btn {
+    background-color: #000000;
+    padding: 12px 32px;
+
+}
+
+.mincho {
+    font-family: 'Hiragino Mincho Std';
+}
+
+.text_hover{
+    border-bottom: 1px solid #000;
+}
+
+.regular {
+    font-family: 'Poppins-Regular';
+}

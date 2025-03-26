@@ -1,0 +1,18 @@
+.swiper-slide {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0.3; /* Fades side images */
+    transform: scale(0.8); /* Shrinks side images */
+}
+
+.swiper-slide-active {
+    opacity: 1 !important; /* Center image fully visible */
+    transform: scale(1) !important; /* Center image is larger */
+}
+
+.swiper{
+    padding-bottom: 50px;
+}
+/* 
+.swiper-pagination {
+    display: none;
+} */
