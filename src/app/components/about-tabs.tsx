@@ -25,7 +25,7 @@ const AboutTabsPage = ({title, desc, img} : AboutTabs) => {
                     className='object-cover md:mb-8'
                   />
                 </div>
-                <div className='md:mt-4 text-gray-100'>{desc[index]}</div>
+                <div className='md:mt-4 mt-4 text-gray-100'>{desc[index]}</div>
               </div>
             </Tab>
           ))

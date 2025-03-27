@@ -26,9 +26,9 @@ export default function NavBar() {
 
   return (
     <div className="flex gap-10 items-center mt-6 px-4 md:px-0 sticky top-0 py-5 p z-[20] border-b-2 bg-white" id='headerShadown'>
-      <div className='container flex justify-between items-center'>
+      <div className='container flex justify-center md:justify-between items-center'>
         {/* Logo */}  
-        <div className="text-lg md:text-xl font-bold">
+        <div className="text-lg md:text-left md:text-xl font-bold">
           <Link href="/">AUNG KO HTET</Link>
         </div>
 
@@ -40,14 +40,14 @@ export default function NavBar() {
           <Link href="/design">Design</Link>
         </div> */}
 
-        <Link className="bg_btn text-white px-4 rounded-lg hover:scale-105 transition-transform duration-300" href="/components/Contact.tsx">
+        <Link className="bg_btn hidden md:block text-white px-4 rounded-lg hover:scale-105 transition-transform duration-300" href="/components/Contact.tsx">
             Get In Touch!
           </Link>
 
         {/* Mobile Navigation (Optional) */}
-        <div className="md:hidden">
+        {/* <div className="md:hidden">
           <MdMenuOpen size={30}/>
-        </div>
+        </div> */}
       </div>
     </div>
   )

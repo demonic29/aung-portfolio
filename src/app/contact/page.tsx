@@ -62,7 +62,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="container md:my-[150px]">
+    <div className="md:container md:my-[150px]">
       <div className="grid gap-12 md:grid-cols-2 grid-cols-1 items-center">
         <form onSubmit={handleSubmit} className="space-y-4 p-4 rounded-md grid md:gap-4">
           <div>
@@ -70,9 +70,9 @@ export default function Contact() {
             {/* <p className="md:mt-2 ">さあ、私と共に世界を広きましょう！</p> */}
           </div>
          
-         <div className="md:flex gap-4">
+         <div className="md:flex md:gap-4 gap-6">
             <div>
-              <label htmlFor="">First Name</label>
+              <label className="md:text-base text-[12px]" htmlFor="">First Name</label>
               <input 
                 type="text" 
                 name="firstName" 
@@ -84,7 +84,7 @@ export default function Contact() {
               />
             </div>
             <div>
-              <label htmlFor="">Last Name</label>
+              <label className="md:text-base text-[12px]" htmlFor="">Last Name</label>
               <input 
                 type="text" 
                 name="lastName" 
@@ -98,7 +98,7 @@ export default function Contact() {
          </div>
 
           <div className="">
-            <label htmlFor="">Email</label>
+            <label className="md:text-base text-[12px]" htmlFor="">Email</label>
             <input 
               type="email" 
               name="email" 
@@ -111,7 +111,7 @@ export default function Contact() {
           </div>
           
          <div>
-          <label htmlFor="">Message for me </label>
+          <label className="md:text-base text-[12px]" htmlFor="">Message for me </label>
           <textarea 
             name="message" 
             // placeholder="何か私について言い残すこと" 

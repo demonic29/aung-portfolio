@@ -68,15 +68,15 @@ export default function Contact() {
   };
 
   return (
-    <div className="container md:my-[150px]">
+    <div className="md:container md:my-[150px] my-[40px]">
       <div className="grid gap-12 md:grid-cols-2 grid-cols-1 items-center">
         <form onSubmit={handleSubmit} className="space-y-4 p-4 rounded-md grid md:gap-4">
           <div>
-            <h1 className="font-bold md:text-4xl">さあ、私と共に世界を広きましょう！</h1>
+            <h1 className="font-bold md:text-4xl text-xl">さあ、私と共に世界を広きましょう！</h1>
             {/* <p className="md:mt-2 ">さあ、私と共に世界を広きましょう！</p> */}
           </div>
          
-         <div className="md:flex gap-4">
+         <div className="md:flex md:gap-4 gap-4 grid">
             <div>
               <label htmlFor="">First Name</label>
               <input 
@@ -86,7 +86,7 @@ export default function Contact() {
                 value={formData.firstName} 
                 onChange={handleChange} 
                 required 
-                className="w-full border border-stone-400 md:ps-2 md:py-4 rounded mt-2"
+                className="w-full border border-stone-400 md:ps-2 md:py-4 py-2 ps-2 rounded mt-2"
               />
             </div>
             <div>
@@ -98,7 +98,7 @@ export default function Contact() {
                 value={formData.lastName} 
                 onChange={handleChange} 
                 required 
-                className="w-full border border-stone-400 md:ps-2 md:py-4 rounded mt-2"
+                className="w-full border border-stone-400 md:ps-2 md:py-4 py-2 ps-2 rounded mt-2"
               />
             </div>
          </div>
@@ -112,7 +112,7 @@ export default function Contact() {
               value={formData.email} 
               onChange={handleChange} 
               required 
-              className="w-full border border-stone-400 md:ps-2 md:py-4 rounded mt-2"
+              className="w-full border border-stone-400 md:ps-2 md:py-4 py-2 ps-2 rounded mt-2"
             />
           </div>
           
@@ -124,20 +124,20 @@ export default function Contact() {
             value={formData.message} 
             onChange={handleChange} 
             required 
-            className="w-full border border-stone-400 md:ps-2 md:py-4 rounded mt-2"
+            className="w-full border border-stone-400 md:ps-2 md:py-4 py-2 ps-2 rounded mt-2"
           />
          </div>
           <button 
             type="submit" 
             disabled={loading} 
-            className=" bg-stone-900 md:py-2 text-white inline-block disabled:opacity-50"
+            className=" bg-stone-900 md:py-2 ps-2 py-2 text-white inline-block disabled:opacity-50"
           >
             {loading ? "送信中..." : "送信"}
           </button>
           {success && <p className="text-blue-600">送信完了しました </p>}
         </form>
 
-        <div className="h-full w-full">
+        <div className="h-full w-full container md:block">
           <TerminalUi/>
         </div>
       </div>

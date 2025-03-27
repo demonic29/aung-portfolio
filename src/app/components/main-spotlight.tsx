@@ -59,7 +59,7 @@ export const Spotlight = ({
       <div
         className={cn(
           className,
-          'group relative z-10 rounded-md  grid grid-cols-6 gap-2 '
+          'group relative z-10 rounded-md  md:grid md:grid-cols-6 gap-2 '
         )}
       >
         {children}

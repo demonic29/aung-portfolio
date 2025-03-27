@@ -87,15 +87,15 @@ export default function AboutMe() {
 
   return (
     <div className="relative md:py-[100px] bg-black sm:p-8 p-4 rounded-md">
-      <h1 className="font-bold text-white text-center md:mb-4 md:text-[40px] md:tracking-wider">
+      <h1 className="font-bold text-white text-3xl  my-8 md:mt-0 text-center md:mb-4 md:text-[40px] md:tracking-widest">
         私について
       </h1>
 
-      <Spotlight className="md:grid grid-cols-3 h-full gap-2 container">
+      <Spotlight className="md:grid md:grid-cols-3 block h-full gap-2 md:container">
         {boxes.map((box, index) => (
           <SpotLightItem className={box.className} key={index}>
-            <div className="relative z-10 rounded-lg bg-gradient-to-b from-[#0c0c0c] h-full to-[#252525] w-full mx-auto">
-              <div className="grid relative max-h-full h-full 2xl:p-3 p-0 w-full">
+            <div className="relative z-10 rounded-lg bg-gradient-to-b mb-6 md:mb-0 from-[#0c0c0c] h-full to-[#252525] w-full mx-auto">
+              <div className="grid relative max-h-full h-full 2xl:p-3 p-1 w-full gap-4 md:gap-0">
                 <div className={`${box.img === null ? 'hidden' : "relative w-full h-[250px]"}`}>
                  {
                   box.img ?  
@@ -112,7 +112,7 @@ export default function AboutMe() {
                   {box.title}
                 </h1>
                 {/* <AboutTabs children={boxes[2].desc}/> */}
-                <div className="text-left text-gray-300 md:tracking-widest md:leading-[1.8rem] md:text-[0.8rem]">
+                <div className="text-left text-gray-300 md:tracking-widest md:leading-[1.8rem] md:text-[0.8rem] text-[12px] tracking-widest leading-6 pb-4 md:pb-0">
                   {box.desc}
                 </div>
               </div>
