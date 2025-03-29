@@ -4,15 +4,16 @@
 @import 'tailwindcss/utilities';
 /* @import 'tailwindcss-animate'; */
 @import 'animate.css';
-@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
 
 /* -- font --  */
-/* @font-face {
+@font-face {
     font-family: 'Hiragino Mincho Std';
     src: url('../../public/font/miragino/ヒラギノ明朝\ Std\ W4.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
-} */
+}
 
 *{
     margin: 0;
@@ -20,10 +21,6 @@
     box-sizing: border-box;
 }
 
-html, body{
-   font-family: 'Poppins', sans-serif;
-   
-}
 
 .outline_text {
     -webkit-text-stroke: 1px #0B0B0B; 

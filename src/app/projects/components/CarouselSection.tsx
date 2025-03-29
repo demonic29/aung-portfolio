@@ -57,6 +57,7 @@ const CarouselSection = () => {
                 <Swiper
                     effect="coverflow"
                     grabCursor={true}
+                    slidesPerView="auto"
                     centeredSlides={true}
                     spaceBetween={300}
                     loop={true}
