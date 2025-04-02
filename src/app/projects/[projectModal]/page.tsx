@@ -85,14 +85,15 @@ export default function ProjectModal() {
                 title={""}
                 catchcopy={project.catchcopy}
                 description={""}
-                tags={[]} 
-                type={project.type}  
-                thoughts={project.thoughts}  
-                link={project.link}   
-                pdfId={project.pdfId}      
+                tags={[]}
+                type={project.type}
+                thoughts={project.thoughts}
+                link={project.link}
+                // pdfId={project.pdfId}      
                 images={project.images}
-                mockup={project.mockup}
-              />
+                mockup={project.mockup} 
+                videoLink={null}             
+                />
 
               
             </ModalBody>

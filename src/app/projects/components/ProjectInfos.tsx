@@ -6,7 +6,7 @@ import { useParams } from "next/navigation";
 import ProjectPdf from "./ProjectPdf";
 import ProjectImage from "./ProjectImage";
 
-const ProjectInfos = ({ tools, duration, thoughts,link, catchcopy, pdfId, images }: ProjectImages) => {
+const ProjectInfos = ({ tools, duration, thoughts,link, catchcopy, images }: ProjectImages) => {
 
   return (
     <div className="border-b-1 pb-10 mt-8 gap-6">
@@ -50,15 +50,15 @@ const ProjectInfos = ({ tools, duration, thoughts,link, catchcopy, pdfId, images
         <div className="grid gap-2 col-span-2">
           <h1 className="text-stone-400 md:text-sm">実際見る</h1>
           <Link href={link} target="_blank">
-            <p className="md:text-medium md:leading-8 underline text-blue-400">{link}</p>
+            <p className={`${link ? 'md:text-medium md:leading-8 underline text-blue-400': 'text-white cursor-none'} `}>{link ? link : '大変申し訳ないですが、ただいま作成中なのでまたきてくだい！ :(('}</p>
           </Link>
         </div>
 
-        <div className="grid gap-2 col-span-3">
+        {/* <div className="grid gap-2 col-span-3">
           <h1 className="text-stone-400 text-sm">企画書</h1>
           
           <ProjectPdf pdfId={pdfId || ''}/>
-        </div>
+        </div> */}
 
         
       </div>

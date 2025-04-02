@@ -100,7 +100,7 @@ const CarouselSection = () => {
                            <section className='md:mx-[40px]'>
                                 <div className="relative mx-auto w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[300px] transition-transform duration-300 md:max-w-none">
                                     <Image
-                                        src={item.mockup || ''}
+                                        src={item.mockup || '/normal.jpg'}
                                         alt="project-images"
                                         fill
                                         className="object-cover rounded-xl transition-all duration-500 ease-in-out mx-auto"
