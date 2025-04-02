@@ -8,17 +8,12 @@ import {
   ModalBody,
   ModalFooter,
   Button,
-  RadioGroup,
-  Radio,
-  Badge,
   Chip,
 } from "@heroui/react";
+import { IoHeartOutline } from "react-icons/io5";
 import { useState } from "react";
 import Image from "next/image";
-
-import { IoHeartOutline } from "react-icons/io5";
 import ProjectInfos from "../components/ProjectInfos";
-import ProjectPdf from "../components/ProjectPdf";
 
 export default function ProjectModal() {
   const { isOpen, closeModal, selectedProjectId } = useModal();
@@ -37,46 +32,54 @@ export default function ProjectModal() {
         scrollBehavior="inside"
         backdrop="blur"
         classNames={{
-          backdrop: "bg-gradient-to-t from-zinc-900 to-zinc-900/10 backdrop-opacity-20",
+          backdrop:
+            "bg-gradient-to-t from-zinc-900 to-zinc-900/10 backdrop-opacity-20",
           wrapper: "mt-[50px] z-[1000]",
           closeButton: "bg-black hover:text-black md:me-4 md:mt-4 text-white",
         }}
       >
         <ModalContent className="text-white">
-          <div className="text-center bg-stone-900">
-
-            <ModalHeader className="flex flex-col gap-2 mt-[32px] overflow-scroll">
-
-              <div className="md:w-[1000px] md:h-[600px] mx-auto relative">
+          <div className="text-center bg-stone-900 px-4 py-6 md:px-0">
+            <ModalHeader className="flex flex-col gap-2 mt-4 md:mt-8">
+              {/* Responsive Image Container */}
+              <div className="w-full max-w-md md:max-w-[1000px] h-auto mx-auto relative">
                 <Image
-                  alt="Project-Image"
-                  fill
+                  alt="Project Image"
                   src={project.mockup || "/default-image-path.jpg"}
+                  layout="responsive"
+                  width={1000}
+                  height={600}
                   className="rounded-2xl object-cover"
                 />
               </div>
-              
-
             </ModalHeader>
-            
-            <ModalBody className="md:w-[1024px] mx-auto">
-              
-              <div className="grid gap-8 md:mt-8">
-                <Chip className="mx-auto  md:text-[12px]  bg-blue-700  text-white">{project.type}</Chip>
 
-                <h1 className="text-5xl font-bold tracking-tight text-white">
+            <ModalBody className="w-full max-w-lg md:max-w-[1024px] mx-auto">
+              <div className="grid gap-6 md:gap-8 mt-6">
+                {/* Project Type Badge */}
+                <Chip className="mx-auto text-sm md:text-[12px] bg-blue-700 text-white">
+                  {project.type}
+                </Chip>
+
+                {/* Title */}
+                <h1 className="text-2xl md:text-5xl font-bold tracking-tight text-white">
                   {project.title}
                 </h1>
-                <p className="md:leading-8 md:text-medium md:tracking-widest text-stone-300">
+
+                {/* Description */}
+                <p className="text-sm md:text-medium md:tracking-widest leading-6 text-stone-300">
                   {project.description}
                 </p>
-                <div className="flex justify-center border-b md:pb-8">
-                  <div className="border-1 border-stone-500 p-2 rounded-full">
-                    <IoHeartOutline size={16} />
+
+                {/* Like Button */}
+                <div className="flex justify-center border-b pb-4 md:pb-8">
+                  <div className="border border-stone-500 p-3 rounded-full hover:bg-stone-700 cursor-pointer transition">
+                    <IoHeartOutline size={20} className="text-white" />
                   </div>
                 </div>
               </div>
 
+              {/* Project Details */}
               <ProjectInfos
                 tools={project.tools}
                 duration={project.duration}
@@ -89,15 +92,14 @@ export default function ProjectModal() {
                 type={project.type}
                 thoughts={project.thoughts}
                 link={project.link}
-                // pdfId={project.pdfId}      
                 images={project.images}
-                mockup={project.mockup} 
-                videoLink={null}             
-                />
-
-              
+                mockup={project.mockup}
+                videoLink={null}
+              />
             </ModalBody>
-            <ModalFooter>
+
+            {/* Close Button */}
+            <ModalFooter className="flex justify-center mt-6">
               <Button color="danger" variant="light" onPress={closeModal}>
                 Close
               </Button>

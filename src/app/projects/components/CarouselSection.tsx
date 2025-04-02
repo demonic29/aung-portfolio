@@ -45,7 +45,7 @@ const CarouselSection = () => {
 
             <div className="relative md:container">
                 {/* Navigation Buttons */}
-                <div className="flex w-full md:justify-center gap-8 justify-center absolute md:top-120 md:bottom-[-64px] bottom-[-48px] md:right-0 z-50">
+                <div className="md:flex w-full flex  md:justify-center gap-8 justify-center absolute md:bottom-[-64px] bottom-[-5px] md:right-0 z-50">
                     <button ref={prevRef} className=" text-black hover:bg-gray-800 hover:text-white md:p-3 rounded-full transition-all duration-300">
                         <MdOutlineKeyboardArrowLeft className="md:w-8 md:h-8 w-8 h-8" />
                     </button>
@@ -97,7 +97,7 @@ const CarouselSection = () => {
                 >
                     {carouselImages.map((item) => (
                         <SwiperSlide key={item.id}>
-                           <section className='md:mx-[40px]'>
+                           <section className='md:mx-[40px] md:my-0 my-4 md:bg-inherit bg-white rounded-xl shadow-lg md:shadow-none p-4'>
                                 <div className="relative mx-auto w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[300px] transition-transform duration-300 md:max-w-none">
                                     <Image
                                         src={item.mockup || '/normal.jpg'}
@@ -108,13 +108,14 @@ const CarouselSection = () => {
                                 </div>
 
                                 <div className='grid md:mt-4 gap-2'>
-                                    <h1 className='font-bold text-[35px]'>{item.title}</h1>
-                                    <Chip className={`md:text-[12px] text-[10px] text-white ${item.type === '個人制作' ? 'bg-gray-500' : 'bg-stone-900'}`}>{item.type}</Chip>
+                                    <h1 className='font-bold md:text-[35px] mt-4 md:mt-0 text-30px'>{item.title}</h1>
+                                    <Chip className={`md:text-[12px] text-[10px] text-white ${item.type === '個人制作' ? 'bg-green-700' : 'bg-stone-900'}`}>{item.type}</Chip>
                                     <p className='md:text-[16px] md:tracking-wider md:leading-8 text-[12px] leading-6'>{item.description}</p>
                                 </div>
 
+            
                                 <button
-                                    className="bg-stone-900 md:mt-8 hover:bg-stone-700 mt-4 text-[12px] text-white md:px-16 md:py-3 py-2 px-10 md:text-[14px]"
+                                    className="bg-stone-900  md:mt-8 hover:bg-stone-700 mt-4 text-[12px] text-white md:px-16 md:py-3 py-2 px-10 md:text-[14px]"
                                     onClick={() => openModal(item.id)}
                                 >
                                     詳細

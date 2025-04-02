@@ -14,9 +14,9 @@ const AboutTabsPage = ({title, desc, img} : AboutTabs) => {
       <Tabs aria-label="Options" variant="underlined" className='w-full'>
         {
           title.map((item, index) => (
-            <Tab key={index} title={`${title[index]}`} className='hover:text-green-600 md:text-[12px] focus:text-green-600 text-green-400 ps-0 w-full'>
+            <Tab key={index} title={<span className="underline">{title[index]}</span>} className='hover:text-blue-300 md:text-[12px] focus:text-blue-500 foucs:underline text-blue-300 ps-0 w-full'>
 
-              <div className=' rounded-none'>
+              <div className='rounded-none'>
                 <div className='relative h-[250px]'>
                   <Image
                     src={img[index] || "img"}
@@ -25,7 +25,7 @@ const AboutTabsPage = ({title, desc, img} : AboutTabs) => {
                     className='object-cover md:mb-8'
                   />
                 </div>
-                <div className='md:mt-4 mt-4 text-gray-100'>{desc[index]}</div>
+                <div className='md:mt-4 mt-4 text-gray-100'><p className='no-underline decoration-transparent'>{desc[index]}</p></div>
               </div>
             </Tab>
           ))
