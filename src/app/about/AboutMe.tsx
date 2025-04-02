@@ -12,9 +12,10 @@ import chad from "@/app/assets/mine/chad.jpeg"
 import ecc_entry from "@/app/assets/mine/ecc_ceremony.jpg"
 import mcdonals from "@/app/assets/mine/mcdonals.jpeg"
 import ymca2 from "@/app/assets/mine/ymca2.jpeg"
+import award2 from "@/app/assets/mine/award2.jpg"
 
 
-import AboutTabs from "../components/about-tabs";
+import AboutTabs from "./about-tabs";
 
 
 export default function AboutMe() {
@@ -69,7 +70,7 @@ export default function AboutMe() {
       title: '資格',
       desc: (
         <div className="">
-          <AboutTabs title={["JLPT N2合格","日本語学校", "展示会"]} desc={["2022年 7月 - N2 合格", "2023年 3月 - 大阪 YMCA 日本語学校卒業", "2023年 10月 - 敢闘賞 ( ECC 企業展示会 )"]} img={[ecc_entry.src, ymca.src, propay_award.src]}/>
+          <AboutTabs title={["JLPT N2合格","日本語学校", "展示会"]} desc={["2022年 7月 - N2 合格", "2023年 3月 - 大阪 YMCA 日本語学校卒業", "2023年 10月 - 敢闘賞 /  2025年3月 - 教員賞 ( ECC 企業展示会 )"]} img={[award2.src, ymca.src, propay_award.src]}/>
         </div>
       ),
       className: 'h-fit md:col-span-2',

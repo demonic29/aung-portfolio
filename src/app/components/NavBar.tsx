@@ -40,7 +40,7 @@ export default function NavBar() {
           <Link href="/design">Design</Link>
         </div> */}
 
-        <Link className="bg_btn hidden md:block text-white px-4 rounded-lg hover:scale-105 transition-transform duration-300" href="/components/Contact.tsx">
+        <Link className="bg_btn hidden md:block text-white px-4 rounded-lg hover:scale-105 transition-transform duration-300" href="/contact">
             Get In Touch!
           </Link>
 

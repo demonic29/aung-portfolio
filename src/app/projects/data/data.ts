@@ -8,7 +8,7 @@ import tailwind from '../../assets/logos/tailwind.png'
 import js from '../../assets/logos/js.png'
 
 // mockup
-import royaltea from '../assets/mockup/royal_tea.png'
+import royaltea from '../../assets/mockup/royal_tea.png'
 import edm from '../../assets/mockup/edm.png'
 import nail from '../../assets/mockup/nail.png'
 import propay from  '../../assets/mockup/propay.png'
@@ -104,7 +104,7 @@ export const projectImages: ProjectImages[] = [
         "description": `EDM（イーディーエム）とは、Electronic Dance Music（エレクトロニック・ダンス・ミュージック）の略で、シンセサイザーなどの電子楽器を多用したダンスミュージックのジャンルです。`,
         "tags": ['Pathway', 'Adventure', 'Peaks', 'Challenging', 'Breathtaking'],
         "thoughts": 'NEXT.js を使って作りましたけど、作った上で気づいたのは、NEXT の Server Side と Client Side がとても難しいことがわかりました。TypeScript も初めて触ってみてたまに Type 書き忘れとかこのコードがどういう Type 使ったらいいかを慣れるのに時間かかりました。デザインはもちろユーザに見やすくて Clean Ui のタイプをしっかり考えた上で作りました。',
-        "link": 'edm-academyv1.vercel.app',
+        "link": 'https://edm-academyv1.vercel.app/',
         "pdfId": '26f055cb-4e1c-473a-a48f-889a718847b2',
         images: [],
         mockup: edmlg.src
